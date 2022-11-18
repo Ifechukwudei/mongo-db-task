@@ -1,0 +1,27 @@
+//get all task
+GET http://localhost:3000/todo HTTP/1.1
+
+#####
+GET  http://localhost:3000/todo/6377ffc12f3c4d8b068d702a HTTP/1.1
+
+#####
+POST  http://localhost:3000/todo/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "clean",
+    "description": "clean up"
+    
+}
+#####
+PUT  http://localhost:3000/todo/6377ffc12f3c4d8b068d702a HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "dry clean",
+    "description": "laundry"
+    
+}
+
+######
+DELETE  http://localhost:3000/todo/6377ffc12f3c4d8b068d702a HTTP/1.1
